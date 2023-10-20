@@ -1,5 +1,5 @@
 import random
-aleatorio = random.sample(range(1,300),100)
+aleatorio = random.sample(range(1,500),100)
 contadorb = 0
 trocasb = 0
 contadors = 0
