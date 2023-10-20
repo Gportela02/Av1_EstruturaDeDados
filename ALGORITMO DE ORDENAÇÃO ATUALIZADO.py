@@ -76,33 +76,41 @@ def merge(lista3, inicio, meio, fim):
         
         contadorm +=1        
 
-
-a = input ("Você deseja ordenar por qual organizador? \n 1-Bubble Sort \n 2- Selection Sort \n 3- Merge Sort \n")
-resposta = bool (a)
-if resposta == int (1):
-    list1=shortBubbleSort(list1)
-    print ("LISTA NÃO ORGANIZADA: \n")
-    print (list.copy(aleatorio))
-    print ("\n LISTA ORGANIZADA:\n")
-    print (list1)
-    print ("\n A quantida de trocas utilizadas nesse algoritmo foi de ", trocasb)
-    print ("\n A quantida de comparações utilizadas nesse algoritmo foi de ", contadorb)
-
-if resposta == int (2):
-    list2=insertion_sort(list2)
-    print ("LISTA NÃO ORGANIZADA: \n")
-    print (list.copy(aleatorio))
-    print ("\n LISTA ORGANIZADA:\n")
-    print (list2)
-    print ("\n A quantida de trocas utilizadas nesse algoritmo foi de ", trocass)
-    print ("\n A quantida de comparações utilizadas nesse algoritmo foi de ", contadors)
-
-if resposta == int (3):
-    list3 = merge
-    print ("LISTA NÃO ORGANIZADA: \n")
-    print (list.copy(aleatorio))
-    print ("\n LISTA ORGANIZADA:\n")
-    print (list3)
-    print ("\n A quantida de trocas utilizadas nesse algoritmo foi de ", trocasm)
-    print ("\n A quantida de comparações utilizadas nesse algoritmo foi de ", contadorm)
-   
+contador = 0
+while (contador < 3):
+    a = input ("Você deseja ordenar por qual organizador? \n 1-Bubble Sort \n 2- Selection Sort \n 3- Merge Sort \n")
+    resposta = bool (a)
+    if resposta == int (1):
+        list1=shortBubbleSort(list1)
+        print ("LISTA NÃO ORGANIZADA: \n")
+        print (list.copy(aleatorio))
+        print ("\n LISTA ORGANIZADA:\n")
+        print (list1)
+        print ("\n A quantida de trocas utilizadas nesse algoritmo foi de ", trocasb)
+        print ("\n A quantida de comparações utilizadas nesse algoritmo foi de ", contadorb)
+        contador +=1
+    if resposta == int (2):
+        list2=insertion_sort(list2)
+        print ("LISTA NÃO ORGANIZADA: \n")
+        print (list.copy(aleatorio))
+        print ("\n LISTA ORGANIZADA:\n")
+        print (list2)
+        print ("\n A quantida de trocas utilizadas nesse algoritmo foi de ", trocass)
+        print ("\n A quantida de comparações utilizadas nesse algoritmo foi de ", contadors)
+        contador +=1
+    if resposta == int (3):
+        list3 = merge
+        print ("LISTA NÃO ORGANIZADA: \n")
+        print (list.copy(aleatorio))
+        print ("\n LISTA ORGANIZADA:\n")
+        print (list3)
+        print ("\n A quantida de trocas utilizadas nesse algoritmo foi de ", trocasm)
+        print ("\n A quantida de comparações utilizadas nesse algoritmo foi de ", contadorm)
+        contador +=1
+    
+    if contador == (1): 
+        print ("\n Você tem mais 2 algoritmos de ordenação para testar!!\n")
+    if contador == (2):
+        print ("\n Você tem apenas 1 algoritmo restante para testar.\n")
+    if contador == (3):
+        print ("\n Parabéns você testou todos os algoritmos de ordenação!")
